@@ -6,7 +6,7 @@ package word2vec
 
 import scala.math.exp
 
-object Options {
+class Options {
 
     val MAX_STRING = 100
     val EXP_TABLE_SIZE = 1000
@@ -49,5 +49,4 @@ object Options {
             expTable(i) = x / (x + 1)
         }
     }
-
 }

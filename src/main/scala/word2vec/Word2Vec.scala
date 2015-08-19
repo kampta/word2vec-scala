@@ -9,9 +9,10 @@ object Word2Vec {
 
         //val infile = args(0)
 
-        val opt = Options
+        val opt = new Options()
         opt.init()
 
-
+        val vocab = new Vocab(opt)
+        println(vocab.GetWordHash("kskks"))
     }
 }
